@@ -90,78 +90,78 @@ export const hisQuestions = [
 
 export const sciQuestions = [
     {
-        questionText: 'What is the capital of France?',
+        questionText: 'How many bones are in the human body?',
         answerOptions: [
-            { answerText: 'New York', isCorrect: false },
-            { answerText: 'London', isCorrect: false },
-            { answerText: 'Paris', isCorrect: true },
-            { answerText: 'Dublin', isCorrect: false },
+            { answerText: '300', isCorrect: false },
+            { answerText: '120', isCorrect: false },
+            { answerText: '206', isCorrect: true },
+            { answerText: '408', isCorrect: false },
         ],
     },
     {
-        questionText: 'What is Eath\'s largest continent?',
+        questionText: 'The concept of gravity was discovered by which famous physicist?',
         answerOptions: [
-            { answerText: 'Antartica', isCorrect: false },
-            { answerText: 'Africa', isCorrect: false },
-            { answerText: 'Asia', isCorrect: true },
-            { answerText: 'Europe', isCorrect: false },
+            { answerText: 'Albert Einstein', isCorrect: false },
+            { answerText: 'Henry Coanda', isCorrect: false },
+            { answerText: 'Pitagora', isCorrect: false },
+            { answerText: 'Sir Isaac Newton', isCorrect: true },
         ],
     },
     {
-        questionText: 'What country has the most natural lakes?',
+        questionText: 'What is the biggest planet in our solar system?',
         answerOptions: [
-            { answerText: 'Australia', isCorrect: false },
-            { answerText: 'Canada', isCorrect: true },
-            { answerText: 'India', isCorrect: false },
-            { answerText: 'United States', isCorrect: false },
+            { answerText: 'Pluto', isCorrect: false },
+            { answerText: 'Jupiter', isCorrect: true },
+            { answerText: 'Mercury', isCorrect: false },
+            { answerText: 'Neptune', isCorrect: false },
         ],
     },
     {
-        questionText: 'What African country served as the setting for Tatooine in Star Wars?',
+        questionText: 'What is a material that will not carry an electrical charge called?',
         answerOptions: [
-            { answerText: 'Ghana', isCorrect: false },
-            { answerText: 'Ethiopia', isCorrect: false },
-            { answerText: 'Tunisia', isCorrect: true },
-            { answerText: 'Gabon', isCorrect: false },
+            { answerText: 'Insulator', isCorrect: true },
+            { answerText: 'Polyester', isCorrect: false },
+            { answerText: 'Copper', isCorrect: false },
+            { answerText: 'Urbanite', isCorrect: false },
         ],
     },
 ]
 
 export const gamQuestions = [
     {
-        questionText: 'What is the capital of France?',
+        questionText: 'Which God confronts Kratos at the end of God of War (2018)?',
         answerOptions: [
-            { answerText: 'New York', isCorrect: false },
-            { answerText: 'London', isCorrect: false },
-            { answerText: 'Paris', isCorrect: true },
-            { answerText: 'Dublin', isCorrect: false },
+            { answerText: 'Thor', isCorrect: true },
+            { answerText: 'Ares', isCorrect: false },
+            { answerText: 'Zeus', isCorrect: false },
+            { answerText: 'Odin', isCorrect: false },
         ],
     },
     {
-        questionText: 'What is Eath\'s largest continent?',
+        questionText: 'Mortal Kombat fighter Sub-Zero has been the grandmaster of what clan?',
         answerOptions: [
-            { answerText: 'Antartica', isCorrect: false },
-            { answerText: 'Africa', isCorrect: false },
-            { answerText: 'Asia', isCorrect: true },
-            { answerText: 'Europe', isCorrect: false },
+            { answerText: 'Shiray Ryu', isCorrect: false },
+            { answerText: 'Minamoto', isCorrect: false },
+            { answerText: 'Lin Kuei', isCorrect: true },
+            { answerText: 'Takeda', isCorrect: false },
         ],
     },
     {
-        questionText: 'What country has the most natural lakes?',
+        questionText: 'Call of Duty Warzone\'s main map is set in what fictional city?',
         answerOptions: [
-            { answerText: 'Australia', isCorrect: false },
-            { answerText: 'Canada', isCorrect: true },
-            { answerText: 'India', isCorrect: false },
-            { answerText: 'United States', isCorrect: false },
+            { answerText: 'Bucharest', isCorrect: false },
+            { answerText: 'Pripyat', isCorrect: false },
+            { answerText: 'Moscow', isCorrect: false },
+            { answerText: 'Verdansk', isCorrect: true },
         ],
     },
     {
-        questionText: 'What African country served as the setting for Tatooine in Star Wars?',
+        questionText: 'In Half-Life 2, what creature is Dr. Kleiner\'s pet Lamarr?',
         answerOptions: [
-            { answerText: 'Ghana', isCorrect: false },
-            { answerText: 'Ethiopia', isCorrect: false },
-            { answerText: 'Tunisia', isCorrect: true },
-            { answerText: 'Gabon', isCorrect: false },
+            { answerText: 'Gonarch', isCorrect: false },
+            { answerText: 'Headcrab', isCorrect: true },
+            { answerText: 'Antlion', isCorrect: false },
+            { answerText: 'Gargantua', isCorrect: false },
         ],
     },
 ]
