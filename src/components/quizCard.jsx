@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {CardBody, CardBox, CardHeader, CardHeading, CardOption} from '../styles/Card';
 import {menuOptions, geoQuestions, hisQuestions, sciQuestions, gamQuestions} from '../resources/Questions';
 import toast from 'react-hot-toast';
+import { ResultsBody, ResultsBox, ResultsHeader, ResultsHeading } from '../styles/Results';
 
 const QuizCard = () => {
 
@@ -66,7 +67,17 @@ const QuizCard = () => {
 
     return (
         <>
-        { showScore ? ''
+        { showScore ? 
+        <ResultsBox>
+            <ResultsHeader>
+                <ResultsHeading>Hooray!</ResultsHeading>
+            </ResultsHeader>
+
+            <ResultsBody>
+               <p>{`You've scored ${score} points!`}</p>
+            </ResultsBody>
+
+        </ResultsBox>
         :
         <CardBox>
             <CardHeader>
