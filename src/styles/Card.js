@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import BookLogo from '../resources/books.png';
 
 export const CardBox = styled.div`
    display: flex;
@@ -33,9 +33,21 @@ export const CardBox = styled.div`
 
 `;
 
+
 export const CardHeader = styled.header`
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
+  margin: 0 auto;
+`;
+
+export const HeaderImage = styled.div`
+  background-image: url(${BookLogo});
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 13.5em;
+  top: 0.5em;
 `;
 
 export const CardHeading = styled.h1`

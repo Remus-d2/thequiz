@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { CardBody, CardBox, CardHeader, CardHeading, CardOption } from '../styles/Card';
+import React, { useState} from 'react';
+import { CardBody, CardBox, CardHeader, CardHeading, CardOption, HeaderImage } from '../styles/Card';
 import { menuOptions, geoQuestions, hisQuestions, sciQuestions, gamQuestions } from '../resources/Questions';
 import toast from 'react-hot-toast';
 import { ResultsBody, ResultsBox, ResultsHeader, ResultsHeading, ResultsParagraph, ResultsLink, ResultsRowBox, ResultsReset } from '../styles/Results';
+
 
 const QuizCard = () => {
 
     const [showMenu, setShowMenu] = useState(true);
     const [showScore, setShowScore] = useState(false);
     const [lastUsed, setLastUsed] = useState('');
+    const [hasStarted, setHasStarted] = useState(false);
     const [currentArray, setCurrentArray] = useState([{}]);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
-
-    useEffect(() => {
-
-    });
 
     const handleMenuEvent = (e, prevState) => {
         e.preventDefault();
@@ -27,26 +25,30 @@ const QuizCard = () => {
             case 1:
                 setCurrentArray(hisQuestions);
                 setLastUsed('history');
-                console.log(currentId);
-                console.log(currentArray);
+                setHasStarted(true);
+             //   console.log(currentId);
+             //   console.log(currentArray);
                 break;
             case 2:
                 setCurrentArray(sciQuestions);
                 setLastUsed('science');
-                console.log(currentId);
-                console.log(currentArray);
+                setHasStarted(true);
+             //   console.log(currentId);
+              //  console.log(currentArray);
                 break;
             case 3:
                 setCurrentArray(gamQuestions);
                 setLastUsed('gaming');
-                console.log(currentId);
-                console.log(currentArray);
+                setHasStarted(true);
+              //  console.log(currentId);
+              //  console.log(currentArray);
                 break;
             default:
                 // console.log(currentArray);
                 setCurrentArray(geoQuestions);
                 setLastUsed('geography');
-                console.log(currentId);
+                setHasStarted(true);
+             //   console.log(currentId);
         }
         return currentArray;
     };
@@ -73,18 +75,23 @@ const QuizCard = () => {
     const handleReset = () => {
         setShowMenu(false);
         setShowScore(false);
+        setHasStarted(false);
         switch (lastUsed) {
             case 'history':
                 setCurrentArray(hisQuestions);
+                setHasStarted(true);
                 break;
             case 'science':
                 setCurrentArray(sciQuestions);
+                setHasStarted(true);
                 break;
             case 'gaming':
                 setCurrentArray(gamQuestions);
+                setHasStarted(true);
                 break;
             default:
                 setCurrentArray(geoQuestions);
+                setHasStarted(true);
         }
         setCurrentQuestion(0);
         setScore(0);
@@ -112,6 +119,7 @@ const QuizCard = () => {
                 :
                 <CardBox>
                     <CardHeader>
+                        {!hasStarted ? <HeaderImage /> : ''}
                         <CardHeading>{showMenu ? menuOptions[0].menuText : currentArray[currentQuestion].questionText}</CardHeading>
                     </CardHeader>
 
